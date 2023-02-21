@@ -6,11 +6,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
    }
    
    
    .nav-links{
-        color: brown;
+        color: rgb(0, 0, 0);
         align-items: center;
         justify-content: space-around;
         display: flex;
@@ -62,9 +63,27 @@
 
     .nav-links li:hover{
         transform: scale(1.2); /*To increase the while cursor is on the Links*/
-        transition: transform 0.6s;
+        transition: transform 0.6s;/*To delay the Link size while cursor is on the Links */
     }
 
+/*Start of : To add menu in the Tabs or mobile view */
+    .arrow{
+      height: 5.5vh;
+      width: 30px;
+      transform: translateY(70%);
+      display: none;
+      margin-right: 10px;
+    }
+
+    .line1,.line2,.line3 {
+      height: 30%;
+      width: 100%;
+      margin-top: 2px;
+      background-color: #fff;
+      border-radius: 3px;
+    }
+
+/* End of : To add menu in the Tabs or mobile view */
 
     h1{
         background-color: aqua;
@@ -94,4 +113,64 @@
     body{
         background-image: url("images/web_page_images.webp");
         background-size: 100% 100%;
+        font-family: Verdana, sans-serif;
     }
+
+/* Navbar for 14.6 Laptops or below 840px */
+
+    @media screen and (max-width:840px) {
+      .nav-links{
+          width:65%; 
+      }
+    }
+
+/* Navbar for Tabs or below 574px */
+
+    @media screen and (max-width:500px) {
+      .nav-links{
+          /* display: none; */
+          position: fixed; /*By Using this we can stop the overflow of the body*/
+          top: 15vh;
+          right: 0;
+          flex-direction: column;  /*To make the Links column */
+          height: 75vh;
+          background-color: rgb(0, 255, 200);
+          width: 70%;
+          transform: translateX(100%);
+          transition: transform 2s; /*To delay the slide for 1 second*/
+          clip-path: circle(70%); /*To make the straight lines into a circle shape*/
+        }
+      .arrow{
+        display: block;
+      }
+    }
+
+
+    .display{
+      transform: translateX(0%);
+    }
+
+    .toggle0{
+      transform: rotate(45deg) translate(10px,9px);
+      transition: transform 1s;
+    }
+
+    .toggle1{
+      display: none;
+    }
+
+    .toggle2{
+      transform: rotate(-40deg);
+      transition: transform 1s;
+    }
+
+    
+
+/* Navbar for mobiles or below 428px */
+
+    @media screen and (max-width:428px) {
+      .nav-links{
+          width: 70%; 
+      }
+    }
+
