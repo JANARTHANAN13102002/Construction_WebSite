@@ -85,29 +85,9 @@
 
 /* End of : To add menu in the Tabs or mobile view */
 
-    h1{
-        background-color: aqua;
+    .h1{
         color: black;
         text-align: center;
-        font-size: 50px;
-    }
-
-    h2{
-        font-size: 25px;
-        font-style: bold;
-        margin-left :12%;
-        padding:1px 16px;
-        height: 20px;;
-    }
-
-
-    p{
-        text-align: left;
-        margin-left :12%;
-        padding: 1px 50px;
-        height: 70px;
-        border-right: 10px;
-        border-left: 10px;
     }
 
     body{
@@ -138,7 +118,7 @@
           width: 70%;
           transform: translateX(100%);
           transition: transform 2s; /*To delay the slide for 1 second*/
-          clip-path: circle(70%); /*To make the straight lines into a circle shape*/
+          border-radius: 30px;
         }
       .arrow{
         display: block;
