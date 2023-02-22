@@ -150,7 +150,149 @@
     
 }
 
+@media screen and (max-width:800px) {
+    .login_form::before{
+        content: '';
+        position: absolute;
+        bottom: 3%;
+        right: -2%;
+        width: 200px;
+        height: 200px;
+        background: aqua;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: .8;
+    }
+    
+    .login_form::after{
+        content: '';
+        position: absolute;
+        top: 3%;
+        left: -2%;
+        width: 200px;
+        height: 200px;
+        background: aqua;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: .8;
+    }
+    
+}
+
 @media screen and (max-width:500px) {
+    .login_form::before{
+        content: '';
+        position: absolute;
+        bottom: -8%;
+        right: -35%;
+        width: 200px;
+        height: 200px;
+        background: aqua;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: .8;
+    }
+    
+    .login_form::after{
+        content: '';
+        position: absolute;
+        top: -8%;
+        left: -35%;
+        width: 200px;
+        height: 200px;
+        background: aqua;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: .8;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    .login_form::before{
+        content: '';
+        position: absolute;
+        display: flex;
+        bottom: -10%;
+        right: -20%;
+        width: 200px;
+        height: 200px;
+        background: aqua;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: .8;
+    }
+    
+    .login_form::after{
+        content: '';
+        position: absolute;
+        top: -5%;
+        left: -25%;
+        width: 200px;
+        height: 200px;
+        background: aqua;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: .8;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .login_form{
+        justify-content: center;
+        align-items: center;
+        width: 22rem;
+        height: 30rem;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135,.37); 
+        border-radius: 30px;
+    } 
+    
+    .login_form::before{
+        content: '';
+        position: absolute;
+        bottom: -8%;
+        right: -35%;
+        width: 200px;
+        height: 200px;
+        background: aqua;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: .8;
+    }
+    
+    .login_form::after{
+        content: '';
+        position: absolute;
+        top: -8%;
+        left: -35%;
+        width: 200px;
+        height: 200px;
+        background: aqua;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: .8;
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+    .login_form{
+        justify-content: center;
+        align-items: center;
+        width: 18rem;
+        height: 28rem;
+        display: flex;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135,.37); 
+        border-radius: 30px;
+    } 
+    
     .login_form::before{
         content: '';
         position: absolute;
